@@ -1,1 +1,16 @@
 /* pages/test/test.wxss */
+@import "../lib/weui.wxss";
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+.flex-wrp {display: flex;}
+.bc_green {background: green;width:100px; height: 100px;}
+.bc_red {background: red;width:100px; height: 100px;}
+.bc_blue {background: blue;width:100px; height: 100px;}
+
+.image_view_container{
+  align-self: center;
+  height: 250rpx;
+  background-color: #000;
+}

@@ -37,6 +37,12 @@
         "text": "我的",
         "iconPath": "pages/images/mine.png",
         "selectedIconPath": "pages/images/selected_mine.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "pages/images/test.png",
+        "selectedIconPath": "pages/images/test_selected.png"
       }
     ]
   }

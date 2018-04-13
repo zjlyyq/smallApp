@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nodes:[{
+      name:'div',
+      attrs:{
+        class:"rich-text div",
+        style:"width:auto;height:60px;background:#aaa"
+      },
+      children:[{
+        type:'text',
+        text:'Hello World!'
+      }
+      ]
+    }]
 
   },
 

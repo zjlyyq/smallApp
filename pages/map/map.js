@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    latitude: null,
-    longitude: null
+    latitude: 0,
+    longitude: 0
   },
 
   /**
@@ -16,12 +16,19 @@ Page({
     wx.getLocation({
       success: function (res) {
         console.log("res.longitude:" + res.longitude)
-        this.setData({
+        /**
+         * this.setData({
           latitude:res.latitude,
           longitude:res.longitude
         }
         )
-        console.log("this.longitude:" + longitude)
+         */
+        //console.log("this.longitude:" + this.data.longitude)
+        wx.openLocation({
+          latitude: res.latitude,
+          longitude: res.longitude,
+          scale: 28
+        })
       },
     })
   },
@@ -30,7 +37,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    /**
+     * 
+     */
   },
 
   /**
