@@ -1,0 +1,31 @@
+<!--pages/mine/mine.wxml-->
+<text>pages/mine/mine.wxml</text>
+<!--列表渲染-->
+<view wx:for="{{arrays}}">{{index}}:{{item}}</view>
+<!--条件渲染-->
+<view wx:if="{{view == 'mine'}}"> mine </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'MINA'}}"> MINA </view>
+<view wx:for="{{[1,2,3] + ' '}}">
+  {{index}}:{{item}}
+</view>
+<!--上面为什么会输出列表里的逗号-->
+
+<scroll-view wx:for="array">
+{{item}}
+</scroll-view> 
+
+<block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block>
+<view>{{test.say(test.myname)}}</view>
+<wxs module="test">
+  var name = "zjl";
+  var sayname = function(d){
+    return "myname is " + d;
+  }
+  /*将模块的变量和方法暴露出去*/
+  module.exports.say = sayname;
+  module.exports.myname = name;
+</wxs>

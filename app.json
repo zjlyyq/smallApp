@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "村家",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/market.png",
+        "selectedIconPath": "pages/images/selected_market.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "pages/images/logs.png",
+        "selectedIconPath": "pages/images/selected_logs.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "购物车",
+        "iconPath": "pages/images/cats.png",
+        "selectedIconPath": "pages/images/selected_cats.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/images/mine.png",
+        "selectedIconPath": "pages/images/selected_mine.png"
+      }
+    ]
+  }
+}
