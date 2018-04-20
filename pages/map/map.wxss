@@ -1,4 +1,5 @@
 /* pages/map/map.wxss */
 .map{
   width: auto;
+  height: 500rpx;
 }

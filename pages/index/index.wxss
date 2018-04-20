@@ -26,4 +26,7 @@ button{
   text-align: center;
   -webkit-text-size-adjust: 20px;
 }
+image{
+  width: 100%;
+}
 

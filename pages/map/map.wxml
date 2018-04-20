@@ -1,4 +1,11 @@
 <!--pages/map/map.wxml-->
 <text>经纬度：{{longitude}} {{latitude}}</text>
-<map class='map' latitude="{{latitude}}" longitude="{{longitude}}">
+<map class='map' id='mapCtx' latitude="{{latitude}}" longitude="{{longitude}} ">
 </map>
+<view class='container'>
+  <button class='getCenterLocationBt' bindtap='getCenterLocation'>得到地图中心坐标</button>
+  <button class='getLocationBt' bindtap='getLocation'>得到坐标</button>
+</view>
+<canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas" bindtap='canvasClick'>
+
+</canvas>

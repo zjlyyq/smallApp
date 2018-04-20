@@ -1,0 +1,87 @@
+<!--pages/main/main.wxml-->
+<view>
+  <swiper class='' indicator-dots='{{indicator-dots}}' autoplay='{{autoplay}}'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='selection'>
+    <view class='header'>
+      <text class='text-all'>精品推荐</text>
+      <text class='text-not'>全部精品</text>
+    </view>
+    <view class='content'>
+      <!-- <block wx:for="{{content-item_imgUrls}}">
+        <view class='content-item'>
+           <image class='content-item-img' src='{{item}}'></image>
+        </view>
+      </block> -->
+      <view class='content-item' wx:for='{{contentItemImgUrls}}'>
+        <image class='content-item-img' src='{{item}}'></image>
+        <view class='content-item-title'>
+          <text>诺基亚香蕉手机，情怀回归</text>
+        </view>
+        <!-- <text class="content-item-title">诺基亚香蕉手机，情怀回归</text> -->
+      </view>
+      <!-- <view class='content-item'>
+           <image class='content-item-img' src='{{content-item_imgUrls[0]}}'></image>
+        </view> -->
+      <!-- <view class='content-item'>
+        <image class='content-item-img' src='../images/phone3.jpg'></image>
+        <view class='content-item-title'><text>诺基亚香蕉手机，情怀回归</text></view>
+      </view>
+      <view class='content-item'>
+        <image class='content-item-img' src='../images/phone4.jpg'></image>
+        <view class='content-item-title'><text>诺基亚香蕉手机，情怀回归</text></view>
+      </view>
+      <view class='content-item'>
+        <image class='content-item-img' src='../images/phone1.jpeg'></image>
+        <view class='content-item-title'><text>诺基亚香蕉手机，情怀回归</text></view>
+      </view> -->
+    </view>
+  </view>
+  <view class='selection'>
+    <view class='header'>
+      <text class='text-all'>热门评测</text>
+      <text class='text-not'>全部评测</text>
+    </view>
+    <view class='list-item'>
+      <image class='list-item-image' src='../images/iphonse.jpg'></image>
+      <image class='list-item-avator' src='../images/avator.jpg'></image>
+      <view class='list-item-text'>
+        <view class='list-item-title'>这里是标题</view>
+        <view class='list-item-content'>一见如故，“芯”有灵犀。麒麟970智慧芯片，让HUAWEI P20 Pro能够像人类一样学习、认知、判断。
+无论是感知世界万象，还是懂你所想......</view>
+      </view>
+    </view>
+     <view class='list-item'>
+      <image class='list-item-image' src='../images/iphonse.jpg'></image>
+      <image class='list-item-avator' src='../images/avator.jpg'></image>
+      <view class='list-item-text'>
+        <view class='list-item-title'>这里是标题</view>
+        <view class='list-item-content'>一见如故，“芯”有灵犀。麒麟970智慧芯片，让HUAWEI P20 Pro能够像人类一样学习、认知、判断。
+无论是感知世界万象，还是懂你所想......</view>
+      </view>
+    </view>
+     <view class='list-item'>
+      <image class='list-item-image' src='../images/iphonse.jpg'></image>
+      <image class='list-item-avator' src='../images/avator.jpg'></image>
+      <view class='list-item-text'>
+        <view class='list-item-title'>这里是标题</view>
+        <view class='list-item-content'>一见如故，“芯”有灵犀。麒麟970智慧芯片，让HUAWEI P20 Pro能够像人类一样学习、认知、判断。
+无论是感知世界万象，还是懂你所想......</view>
+      </view>
+    </view>
+     <view class='list-item'>
+      <image class='list-item-image' src='../images/iphonse.jpg'></image>
+      <image class='list-item-avator' src='../images/avator.jpg'></image>
+      <view class='list-item-text'>
+        <view class='list-item-title'>这里是标题</view>
+        <view class='list-item-content'>一见如故，“芯”有灵犀。麒麟970智慧芯片，让HUAWEI P20 Pro能够像人类一样学习、认知、判断。
+无论是感知世界万象，还是懂你所想......</view>
+      </view>
+    </view>
+  </view>
+</view>

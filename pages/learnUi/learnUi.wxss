@@ -1,0 +1,49 @@
+/* pages/learnUi/learnUi.wxss */
+.contain{
+  display: flex;
+  width: 100%;
+  height: 600rpx;
+  background: gray;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.item{
+  width: 125rpx;
+  height:125rpx;
+  border: 1px solid #fff;
+  background: rebeccapurple;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100rpx;
+}
+
+.i3{
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 2;
+  flex-basis: 250rpx;
+  flex-shrink: 0;
+}
+.container1{
+  width: 100%;
+  height: auto;
+  background: blue;
+}
+.ralative_item{
+  width: 80rpx;
+  height: 80rpx;
+  border: 1px solid #fff;
+  background: red;
+}
+
+.container1 text{
+  color: red;
+}
+.container1>text{
+  color: blue;
+}
+
+/*图片的  */

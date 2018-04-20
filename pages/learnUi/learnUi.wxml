@@ -1,0 +1,47 @@
+<!--pages/learnUi/learnUi.wxml-->
+<view class='contain'>
+  <view class='item'>1</view>
+  <view class='item'>2</view>
+  <view class='item i3'>3</view>
+  <view class='item'>4</view>
+  <view class='item'>1</view>
+  <view class='item'>2</view>
+  <view class='item'>3</view>
+  <view class='item'>4</view>
+  <view class='item'>1</view>
+  <view class='item'>2</view>
+  <view class='item i3'>3</view>
+  <view class='item'>4</view>
+</view>
+
+
+<view class='container1'>
+  <view class='ralative_item'>1</view>
+  <view class='ralative_item' style='position:relative;left:50rpx;bottom:50rpx'>2
+  
+  </view>
+  <view class='ralative_item' style='position:relative;left:75rpx;bottom:75rpx'>3</view>
+  <text>也硬气</text>
+</view>
+
+<swiper indicator-dots='true'>
+  <swiper-item><image src='../images/google.jpg'></image></swiper-item>
+  <swiper-item><image src='../images/iphone.jpg'></image></swiper-item>
+  <swiper-item><image src='../images/goku.jpg'></image></swiper-item>
+</swiper>
+
+ <scroll-view scroll-y style="height: 400rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green" style='height:100rpx;background:red;'></view>
+    <view id="red"  class="scroll-view-item bc_red" style='height:100rpx;background:blue;'></view>
+    <view id="yellow" class="scroll-view-item bc_yellow" style='height:100rpx;background:green;'></view>
+    <view id="blue" class="scroll-view-item bc_blue" style='height:100rpx;background:blue;'></view>
+     <view id="green" class="scroll-view-item bc_green" style='height:100rpx;background:red;'></view>
+    <view id="red"  class="scroll-view-item bc_red" style='height:100rpx;background:blue;'></view>
+    <view id="yellow" class="scroll-view-item bc_yellow" style='height:100rpx;background:green;'></view>
+    <view id="blue" class="scroll-view-item bc_blue" style='height:100rpx;background:blue;'></view>
+     <view id="green" class="scroll-view-item bc_green" style='height:100rpx;background:red;'></view>
+    <view id="red"  class="scroll-view-item bc_red" style='height:100rpx;background:blue;'></view>
+    <view id="yellow" class="scroll-view-item bc_yellow" style='height:100rpx;background:green;'></view>
+    <view id="blue" class="scroll-view-item bc_blue" style='height:100rpx;background:blue;'></view>
+  </scroll-view>
+  <text>{{note_text}}</text>
